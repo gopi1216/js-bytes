@@ -1,0 +1,18 @@
+:root{
+  /* || Base properties */
+  --primary        : #1F73E0;
+  --secondary      : #587192;
+  --primary-color  : #212121;
+  --background     : #F4F8FD;
+  --secondary-text : #4D4D4D;
+
+/* || Font famlies */
+  --ff-regular : 'regular';
+  --ff-medium  : 'medium';
+}
+
+/* || Reset and Main Layout ======================== */
+@font-face{ font-family: 'regular'; src: url(fonts/Roboto-Regular.ttf); }
+@font-face{ font-family: 'medium'; src: url(fonts/Roboto-Medium.ttf); }
+*, ::before, ::after{ box-sizing: border-box; margin: 0; padding: 0; }
+html, body{ height: 100vh; font-family: var(--ff-regular); background: var(--background); }
