@@ -1,7 +1,8 @@
 :root{
   /* || Base properties */
   --primary        : #1F73E0;
-  --secondary      : #587192;
+  --secondary      : #1E74AA;
+  --ternary        : #587192;
   --primary-color  : #212121;
   --background     : #F4F8FD;
   --secondary-text : #4D4D4D;
@@ -11,8 +12,14 @@
   --ff-medium  : 'medium';
 }
 
-/* || Reset and Main Layout ======================== */
+/* || Reset and Default Styles ======================== */
 @font-face{ font-family: 'regular'; src: url(fonts/Roboto-Regular.ttf); }
 @font-face{ font-family: 'medium'; src: url(fonts/Roboto-Medium.ttf); }
 *, ::before, ::after{ box-sizing: border-box; margin: 0; padding: 0; }
 html, body{ height: 100vh; font-family: var(--ff-regular); background: var(--background); }
+
+/* || Main Layout Styles ======================== */
+main{ height: 100vh; display: grid; grid-template: 4rem 1fr 2rem / 1fr; }
+header{ font-family: var(--ff-medium); display: flex; justify-content: center; align-items: center; color: var(--primary); box-shadow: 0 2px 0 rgba(0 0 0 / 20%); }
+h1{ font-size: 1.5rem; font-weight: 400; }
+footer{ display: flex; justify-content: center; align-items: center; box-shadow: 0 -1px 0 rgba(0 0 0 / 20%); color: var(--secondary-text); }
