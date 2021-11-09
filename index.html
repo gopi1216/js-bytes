@@ -14,7 +14,26 @@
     <header>
       <h1>Number Guessing Game</h1>
     </header>
-    <section></section>
+    <section>
+      <h2>Number guessing Game</h2>
+      <p>We have selected a random number between 1 and 100. Let's see if you can guess it in 10 turns or less. We will tell you, if you're guess was too high or low.</p>
+
+      <form>
+        <div class="form-row">
+          <label for="guessField" class="form-label">Enter a guess:</label>
+          <input type="text" id="guessField" class="guess-field form-control" >
+        </div>
+        <div class="form-row">
+          <button type="button" class="btn primary guess-submit" id="btnSubmit">Submit</button>
+        </div>
+      </form>
+
+      <div class="result-section">
+        <p class="guesses"></p>
+        <p class="last-result"></p>
+        <p class="guess-status"></p>
+      </div>
+    </section>
     <footer>
       <p>&copy; JS &copy;</p>
     </footer>
