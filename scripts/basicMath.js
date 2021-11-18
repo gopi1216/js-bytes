@@ -58,6 +58,7 @@ let duckHeight = 0.3;
 let pwd1 = 'stromboli';
 let pwd2 = 'stROmBoLi';
 */
+
 let eleWeight        = 1000,
     mouseWeight      = 2,
     ostrichHeight    = 2,
@@ -70,4 +71,4 @@ let eleWeight        = 1000,
 
 console.log(weightComparison);
 console.log(heightComparison);
-console.log(pwdComparison);
+console.log( pwdComparison );
