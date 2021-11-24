@@ -69,6 +69,4 @@ let eleWeight        = 1000,
     heightComparison = (ostrichHeight > duckHeight) ? 'True: Ostrich is taller than duck.' : 'False: Ostrich is shorter than duck.',
     pwdComparison    = (pwd1 === pwd2) ? 'Both Paswords are equal.' : 'Both passwords are not equal.' ;
 
-console.log(weightComparison);
-console.log(heightComparison);
-console.log( pwdComparison );
+console.log(weightComparison, '\n', heightComparison, '\n', pwdComparison);
