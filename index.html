@@ -7,32 +7,10 @@
   <title>Practice || JS</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  <main>
-    <header>
-      <h1>Number Guessing Game</h1>
-    </header>
-    <section>
-      <h2>Number guessing Game</h2>
-      <p>We have selected a random number between 1 and 100. Let's see if you can guess it in 10 turns or less. We will tell you, if you're guess was too high or low.</p>
-      <form>
-        <div class="form-row">
-          <label for="guessField" class="form-label">Enter a guess:</label>
-          <input type="text" id="guessField" class="guess-field form-control" >
-        </div>
-        <div class="form-row">
-          <button type="button" class="btn primary guess-submit">Submit</button>
-          <button type="button" class="btn btn-secondary">Add</button>
-        </div>
-      </form>
+<body components-loc="components" components-ext=".html">
+  <main src="appRoot"></main>
 
-      <div class="result-section">
-      </div>
-    </section>
-    <footer>
-      <p>&copy; JS &copy;</p>
-    </footer>
-  </main>
-<script src="scripts/functionReturnValues.js" defer></script>
+  <script src="xlib/alt-iframe.min.js"></script>
+  <script src="scripts/app.js" defer></script>
 </body>
 </html>
