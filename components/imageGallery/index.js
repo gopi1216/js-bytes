@@ -15,7 +15,6 @@ function generateGallery() {
     });
   }
 }
-generateGallery();
 
 function changeOverlay() {
   let darken = document.querySelector('.dark');
@@ -32,4 +31,5 @@ function changeOverlay() {
   });
 }
 
+generateGallery();
 changeOverlay();
