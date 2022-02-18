@@ -1,14 +1,14 @@
 async function getData() {
   let requestURL = 'data/heroes.json',
-    request = new Request(requestURL),
-    response = await fetch(request),
-    superHeroesText = await response.text(),
-    superHeroes = JSON.parse(superHeroesText);
+    request = new Request(requestURL);
 
-  populateHeader(superHeroes);
-  populateSection(superHeroes);
-
-  console.log(superHeroes);
+  fetch(request)
+    .then((response) => response.text())
+    .then((text) => {
+      let superHeroes = JSON.parse(text);
+      populateHeader(superHeroes);
+      populateSection(superHeroes);
+    });
 }
 
 function populateHeader(hObj) {
