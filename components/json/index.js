@@ -1,6 +1,6 @@
 async function getData() {
-  let requestURL = 'data/heroes.json',
-    request = new Request(requestURL);
+  let heroRequestURL = 'data/heroes.json',
+    request = new Request(heroRequestURL);
 
   fetch(request)
     .then((response) => response.text())
