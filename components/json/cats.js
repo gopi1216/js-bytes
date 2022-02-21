@@ -1,4 +1,6 @@
-const requestURL = 'data/cats.json';
+'use strict';
+
+const catRequestURL = 'data/cats.json';
 let motherInfo = 'The names of mother cats are: ',
   catsInfoSection = document.querySelector('.cats-info'),
   para = document.createElement('p'),
@@ -7,7 +9,7 @@ let motherInfo = 'The names of mother cats are: ',
   male = 0,
   female = 0;
 
-fetch(requestURL)
+fetch(catRequestURL)
   .then((response) => response.text())
   .then((text) => {
     let cats = JSON.parse(text);
