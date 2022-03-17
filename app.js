@@ -46,10 +46,10 @@ let day = date.getDate(),
 day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
 month = (date.getMonth() + 1) < 10 ? `0${date.getMonth() + 1}` : `${date.getMonth() + 1}`;
 
-console.log(`Date is: ${day} - ${month} - ${year} `);
-console.log(`Date is: ${day} / ${month} / ${year} `);
-console.log(`Date is: ${month} - ${day} - ${year} `);
-console.log(`Date is: ${month} / ${day} / ${year} `);
+console.log(`Date is: ${day} - ${month} - ${year}`);
+console.log(`Date is: ${day} / ${month} / ${year}`);
+console.log(`Date is: ${month} - ${day} - ${year}`);
+console.log(`Date is: ${month} / ${day} / ${year}`);
 
 /*
 || Write a program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7
@@ -57,10 +57,22 @@ console.log(`Date is: ${month} / ${day} / ${year} `);
 ? Formula to calculate area: Math.sqrt(perimeter * (perimeter - side1) * (perimeter - side2) * (perimeter - side3))
 */
 let calcArea = (side1, side2, side3) => {
-  let perimeter = (side1 + side2 + side3) / 2,
-    area = Math.sqrt(perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3)))
+  //p means perimeter
+  let p = (side1 + side2 + side3) / 2,
+    area = Math.sqrt(p * ((p - side1) * (p - side2) * (p - side3)));
 
-  console.log(`Ares is: ${ area }`)
-}
+  console.log(`Ares is: ${area}`);
+};
 
-calcArea(5, 6, 7)
+calcArea(5, 6, 7);
+
+/*
+Write a program to reverse a String.
+? 'w3resource' to 'ecruoser3w'
+*/
+
+let str = 'w3resource';
+let arr = str.split('');
+arr.reverse();
+str = arr.join('');
+console.log(arr, str);
