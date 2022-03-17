@@ -29,3 +29,9 @@ weekDays.forEach((day, index) => {
 });
 
 console.log(`Current Time is: ${hours} : ${minutes} : ${seconds}`);
+
+/*
+|| Write a program to print the contents of the current window.
+*/
+
+window.print()
