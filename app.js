@@ -57,7 +57,7 @@ console.log(`Date is: ${month} / ${day} / ${year}`);
 ? Formula to calculate area: Math.sqrt(perimeter * (perimeter - side1) * (perimeter - side2) * (perimeter - side3))
 */
 let calcArea = (side1, side2, side3) => {
-  //p means perimeter
+  // @p - perimeter
   let p = (side1 + side2 + side3) / 2,
     area = Math.sqrt(p * ((p - side1) * (p - side2) * (p - side3)));
 
@@ -67,7 +67,7 @@ let calcArea = (side1, side2, side3) => {
 calcArea(5, 6, 7);
 
 /*
-Write a program to reverse a String.
+|| Write a program to reverse a String.
 ? 'w3resource' to 'ecruoser3w'
 */
 
@@ -76,3 +76,19 @@ let arr = str.split('');
 arr.reverse();
 str = arr.join('');
 console.log(arr, str);
+
+const calcAverage = (n1, n2, n3) => n1 + n2 + n3 / 3;
+let avgDolphin = calcAverage(14, 13, 21);
+let avgKoalas = calcAverage(25, 64, 49);
+
+const checkWinner = (t1, t2) => {
+  if (t1 > t2 * 2) {
+    console.log(`Dolphins wins 🏆 (${t1} vs ${t2})`);
+  } else if (t2 > t1 * 2) {
+    console.log(`Koalas wins 🏆 (${t2} vs ${t1})`);
+  } else {
+    console.log('No team wins a 🏆');
+  }
+};
+
+checkWinner(avgDolphin, avgKoalas);
